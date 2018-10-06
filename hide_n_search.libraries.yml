@@ -1,0 +1,11 @@
+hide_n_search:
+  version: 1.x
+  css:
+    theme:
+      css/hide_n_search.css: {}
+  js: 
+    js/hide_n_search.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    
