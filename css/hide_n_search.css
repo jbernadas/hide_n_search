@@ -30,6 +30,15 @@ button#hide-n-search-button:focus {
     text-align: right;
     display: none;
 }
+#hide-n-search-button-x.btn-default {
+    color: #f5f5f5;
+    background-color: #777777;
+    border-color: #ccc0;
+}
+header nav.contextual-region {
+    position: relative;
+    z-index: 1000;
+}
 /*** Takes over the background of default Drupal 8 search form ****/
 #search-block-form .input-group-btn > .btn, #hide-n-search-button {
     background-color: #1b1c24 !important;
@@ -37,22 +46,67 @@ button#hide-n-search-button:focus {
 }
 header #block-wd8-search {
     padding-top: 9px;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+    float: right;
+    display: inline-block;
 }
 header #block-wd8-search .form-type-search input#edit-keys {
     width: 450px;
     float: right;
     border-radius: 4px;
 }
-/* input#edit-keys--2{
-    max-width: 460px;
-    float: right !important;
+/* nav#block-wd8-main-menu {
+    position: relative;
+    z-index: 20;
+    margin-right: 48px;
 } */
+nav#block-wd8-main-menu {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+#block-hidensearch {
+    position: relative;
+    z-index: 20;
+    display: inline-block;
+    float: right;
+}
+.region.region-navigation-collapsible {
+    display: inline-block;
+    text-align: right !important;
+    position: relative;
+    float: right;
+}
+#block-wd8-account-menu ul.menu.menu--account.nav.navbar-nav a {
+    padding-right: 0;
+}
 #search-block-form .input-group {
     width: 530px;
-    float: right !important;
-    transition: all 0.3s ease-in-out;
+    right: 0;
+    position: relative;
+    z-index: 21;
 }
-
+/* #block-wd8-account-menu {
+    position: relative;
+    z-index: 1;
+} */
+#block-wd8-account-menu {
+    position: relative;
+    z-index: 1;
+    float: right;
+    display: inline-block;
+    border-left: 1px solid #777;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+#block-hidensearch {
+    position: relative;
+}
+#hide-n-search-button {
+    position: relative;
+}
 header #block-wd8-search {
     display: none;
 }
