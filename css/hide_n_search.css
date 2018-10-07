@@ -1,6 +1,8 @@
 
-.hdn {
-    display: none !important;
+
+
+.show {
+    display: block !important;
 }
 #hide-n-search-button {
     position: relative; 
@@ -18,7 +20,7 @@ ul.menu.menu--account.nav.navbar-nav.navbar-right {
     margin-right: 10px;
 }
 button#hide-n-search-button:focus {
-    border: 0;
+    border: 1px solid transparent;
     outline: 0 !important;
 }
 #hide-n-search-button-x {
@@ -26,11 +28,20 @@ button#hide-n-search-button:focus {
     z-index: 100;
     float: left;
     text-align: right;
+    display: none;
 }
 /*** Takes over the background of default Drupal 8 search form ****/
 #search-block-form .input-group-btn > .btn, #hide-n-search-button {
     background-color: #1b1c24 !important;
     border-color: transparent;
+}
+header #block-wd8-search {
+    padding-top: 9px;
+}
+header #block-wd8-search .form-type-search input#edit-keys {
+    width: 450px;
+    float: right;
+    border-radius: 4px;
 }
 /* input#edit-keys--2{
     max-width: 460px;
@@ -39,5 +50,9 @@ button#hide-n-search-button:focus {
 #search-block-form .input-group {
     width: 530px;
     float: right !important;
+    transition: all 0.3s ease-in-out;
 }
 
+header #block-wd8-search {
+    display: none;
+}
