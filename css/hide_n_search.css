@@ -80,7 +80,7 @@ nav#block-wd8-main-menu {
 }
 #search-block-form .input-group {
     width: 530px;
-    right: 5px;
+    right: 0;
     position: absolute;
     z-index: 21;
 }
