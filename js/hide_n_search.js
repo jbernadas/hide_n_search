@@ -1,5 +1,3 @@
-
-
 (function($) {
     $(document).ready(function(){
         // On page load insert the X button 
