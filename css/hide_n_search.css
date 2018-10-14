@@ -1,6 +1,6 @@
 #hide-n-search-button {
     position: relative; 
-    right: 0;
+    right: -10px;
     margin-top: 6px;
     padding-top: 9px;
     float: right;
@@ -32,6 +32,7 @@ header nav.contextual-region {
     background-color: #1b1c24;
     border-color: transparent;
 }
+/*** This ID will change when transferred to other sites, so must be changed accordingly ***/
 #block-wd8-search {
     padding-top: 9px;
     max-width: 100%;
@@ -54,7 +55,7 @@ header nav.contextual-region {
     position: relative;
     z-index: 1;
     display: inline-block;
-    padding-right: 30px;
+    padding-right: 25px;
 }
 #block-hidensearch {
     position: relative;
@@ -62,19 +63,11 @@ header nav.contextual-region {
     display: inline-block;
     float: right;
 }
-.region.region-navigation-collapsible {
-    display: inline-block;
-    position: relative;
-    float: right;
-}
 #block-wd8-account-menu ul.menu.menu--account.nav.navbar-nav a {
     padding-right: 0;
 }
-#search-block-form .input-group {
-    width: 530px;
-    right: 0;
-    position: absolute;
-    z-index: 21;
+#block-wd8-search {
+    display: none;
 }
 #block-wd8-account-menu {
     position: relative;
@@ -85,12 +78,20 @@ header nav.contextual-region {
     margin-left: 10px;
     padding-left: 10px;
 }
+#search-block-form .input-group {
+    width: 530px;
+    right: -10px;
+    position: absolute;
+    z-index: 21;
+}
 #block-hidensearch {
     position: absolute;
     right: 30px;
 }
-header #block-wd8-search {
-    display: none;
+.region.region-navigation-collapsible {
+    display: inline-block;
+    position: relative;
+    float: right;
 }
 
 @media (max-width: 999px) {
@@ -101,7 +102,10 @@ header #block-wd8-search {
         right: 5px;
     }
     #search-block-form .input-group {
-        right: 5px;
+        right: 15px;
+    }
+    #hide-n-search-button {
+        right: 10px;
     }
 }
 @media (max-width: 767px) {
@@ -111,7 +115,7 @@ header #block-wd8-search {
     }
     #search-block-form .input-group {
         width: 300px;
-        right: 0;
+        right: 10px;
     }
     header #block-wd8-search .form-type-search input#edit-keys {
         width: 220px;
