@@ -8,7 +8,7 @@ use Drupal\Core\Block\BlockBase;
  * 
  * @Block(
  *  id = "hide_n_search_block",
- *  admin_label = @Translation("Hide N Search"),
+ *  admin_label = @Translation("Hide-N-Search"),
  *  category = @Translation("Custom"),
  * )
  */
