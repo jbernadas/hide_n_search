@@ -1,4 +1,4 @@
-# hide_n_search
+# hide_search
 
 This is a Drupal 8 module that hides the default search bar and replaces it with a toggle button. It is very lightweight because it reuses all the icons that come with the Bootstrap 3 parent theme for Drupal 8. 
 
